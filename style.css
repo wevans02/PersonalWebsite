@@ -1,5 +1,5 @@
+/* First used in index.html (Main Page) */
 body{
-    /* font-family: 'Times New Roman', Times, serif; */
     background-color: rgb(41, 74, 41);
     color: bisque;
     margin: 0;
@@ -15,6 +15,7 @@ header{
     color: rgb(255, 255, 255);
     padding: 0 15px;
     border-bottom: 2px solid black;
+
 }
 
 ul{
@@ -192,7 +193,7 @@ form{
 }
 ::placeholder {
     color: white;
-    opacity: .5; /* Firefox */
+    opacity: .5;
   }
 .colour{
     background-color: rgb(63, 100, 63);
