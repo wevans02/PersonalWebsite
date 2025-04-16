@@ -1,0 +1,221 @@
+body{
+    /* font-family: 'Times New Roman', Times, serif; */
+    background-color: rgb(41, 74, 41);
+    color: bisque;
+    margin: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(63, 100, 63);
+    color: rgb(255, 255, 255);
+    padding: 0 15px;
+    border-bottom: 2px solid black;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+header li{
+    padding-left: 30px;
+}
+
+a{
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+
+}
+
+.fullscreen-section {
+    width: 100%;
+    scroll-snap-align: start;
+    padding: 30vh 0;
+}
+.fullscreen-section2 {
+    width: 100%;
+    scroll-snap-align: start;
+    padding: 10vh 0;
+}
+
+.Picture img {
+    border: 5px solid rgb(63, 100, 63);
+    border-radius: 15px;
+}
+.text-content {
+    animation: fadeIn 1.5s ease-out;
+}
+main{
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title{
+    font-size: 50px;
+}
+
+.subtitle{
+    font-size: 25px;
+}
+
+p.Example{
+    margin: 0;
+}
+
+.project-details{
+    display: flex;
+    max-width: 800px;
+    line-height: 1.6;
+   
+}
+li{
+    padding-left: 15px;
+}
+main li{
+    min-width: 240px;
+    max-width: 240px;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: rgb(63, 100, 63);
+    margin: 5px;
+}
+.Picture li{
+    max-width: 800px;
+    border: 0;
+    border-radius: 15px;
+    margin: 25px;
+    padding: 0;
+}
+ol.compact-list{
+    padding-left: 50px;
+    text-align: left;
+
+}
+
+ol.compact-list li {
+    padding-left: 0.4em;   
+    text-indent: -0.4em;
+    margin-left: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+dl{
+    list-style: square;
+}
+
+footer{
+    background-color:rgb(41, 74, 41);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+}
+
+footer nav ul{
+    justify-content: center;
+}
+/* First used in About me */
+.center{
+    justify-content: center;
+    display: flex;
+}
+
+.bio-content, .description {
+    max-width: 800px;
+    line-height: 1.6;
+}
+  
+  
+.bio-section{
+    margin-bottom: 1.5rem;
+}
+  
+.highlight {
+    padding: 1rem;
+    border-left: 3px solid #3498db;
+}
+
+.bio-sectionHighlight{
+    list-style:circle;
+}
+
+.bio-sectionHighlight li{
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    max-width: 800px;
+}
+
+/* First used in Contact Me */
+.contactList{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.contactList .left li {
+    padding-right: 24px;
+    border-radius: 8px;
+    flex: 1;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.contactList .right li {
+    padding-left: 24px;
+    border-radius: 8px;
+    flex: 1;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    max-width: 800px;
+}
+
+form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0, auto;
+}
+::placeholder {
+    color: white;
+    opacity: .5; /* Firefox */
+  }
+.colour{
+    background-color: rgb(63, 100, 63);
+    color: white;
+}
+
+.submit{
+    background-color: rgb(63, 100, 63);
+    color: white;
+    cursor: pointer;
+}
+
+input, textarea{
+    margin: 0;
+    text-align: left;
+}
+
+.link{
+    color:black;
+}
+
+.button{
+    padding: 0 0;
+    height: 34px;
+    cursor: pointer;
+}

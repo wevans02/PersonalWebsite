@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h2>Wyatt Evans</h2>
+        <nav>
+            <ul>
+                <li> <a href="index.html"><h3>Home</h3></a> </li>
+                <li> <a href="aboutMe.html"><h3>About Me</h3></a> </li>
+                <li><h3>Contact</h3></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div style="margin-left: 0;">
+        <div class="fullscreen-section">
+            <div class = "title">
+                <h1>Contact Me</h1>
+            </div>
+            <div class="subtitle">
+                        <p><img src = "photos/office-phone-icon--25.png" style = "width: 15px;" class = "mypicture"/>:  613-920-0835</p>
+                    
+                        <p><img src = "photos/Email_Icon.png" style = "width: 25px;" class = "mypicture"/>: wyattdlevans@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <br>
+        </div>
+        
+        <!-- <div class="center"> -->
+            <div class="contactList">
+                <ul>
+                    <div class="left">
+                        <li>
+                            <br>
+                            <br>
+                            <br>
+                            <h2>Connect with me on Linked-In</h2>
+                            <!-- <button onclick="goToLinkedIn()" style= "background-color: rgb(255, 255, 255); border-radius: 5px;" style= "color: white;" class = "button"><a href = "https://www.linkedin.com/in/wyatt-evans-66b8a62b7/" target = "_blank" class = "link">Linked-In</a></button> -->
+
+                            <button onclick="goToLinkedIn()" style= "background-color: rgb(255, 255, 255); border-radius: 5px;" style= "color: white;" class = "button"><a href = "https://www.linkedin.com/in/wyatt-evans-66b8a62b7/" target = "_blank" class = "link"><img src = "photos/LinkedIn_logo_initials.png"style = "width: 30px;"></a></button>
+                            <script>
+                                function goToLinkedIn(){
+                                    window.open("https://www.linkedin.com/in/wyatt-evans-66b8a62b7/", '_blank');
+                                }
+                            </script>
+                            <br>
+                            <h2>Visit My Git-Hub</h2>
+                            <button onclick="goToLinkedIn()" style= "background-color: rgb(255, 255, 255); border-radius: 5px;" style= "color: white;" class = "button"><a href = "https://github.com/wevans02" target = "_blank" class = "link"><img src = "photos/GithubLogo.png"style = "width: 30px;"></a></button>
+                            <script>
+                                function goToLinkedIn(){
+                                    window.open("https://github.com/wevans02", '_blank');
+                                }
+                            </script>
+                        </li>
+                    </div>
+
+                    <div class="right">
+                        <li>
+                            <div class="center">
+                                <h2>Email Me:</h2>
+                            </div>
+                            <form action="https://formsubmit.co/wyattdlevans@gmail.com" method="post">
+                                <input type="hidden" name="_subject" value="New submission from My Personal Website!">
+                                <label for="email"><p class="Example" style="text-align: left;"> Email</p></label>
+                                <input class = "colour" name = "email" id = "email" required type="email" placeholder="Your Email">
+                                <br>
+                                <label for="textarea" style = "text-align: left;">Message</label>
+                                <textarea class = "colour" name = "Message" id="textarea" cols="30" rows="10" placeholder="Message" required></textarea>
+                                <br>
+                                <input class="submit" type="submit">
+                            </form>
+                        </li>
+                    </div>
+                
+                    
+                </ul>
+            </div>
+        <!-- </div> -->
+        <br>
+        
+    </main>
+    <footer>
+        <h3>Find Me</h3>
+        <nav>
+            <ul>
+                <li> <a href="mailto:wyattdlevans@gmail.com"target = "_blank">Email</a> </li>
+                <li> <a href="https://www.linkedin.com/in/wyatt-evans-66b8a62b7/" target = "_blank">Linked-In</a> </li>
+                <li> <a href="https://github.com/wevans02" target="_blank">Git Hub</a> </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
