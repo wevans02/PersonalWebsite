@@ -49,6 +49,11 @@ a{
 .Picture img {
     border: 5px solid rgb(63, 100, 63);
     border-radius: 15px;
+
+}
+.fit{
+    max-width: 50%;
+    max-height: 50%;
 }
 .text-content {
     animation: fadeIn 1.5s ease-out;
@@ -100,9 +105,10 @@ main li{
     border-radius: 15px;
     margin: 5px;
     padding: 0;
+    height: auto;
 }
 ol.compact-list{
-    padding-left: 50px;
+    padding-left: 20px;
     text-align: left;
     width: auto;
 
@@ -200,9 +206,11 @@ form{
     color: white;
     opacity: .5;
   }
-.colour{
+.textBox{
     background-color: rgb(63, 100, 63);
     color: white;
+    max-width: 100%;
+    height: auto;
 }
 
 .submit{
