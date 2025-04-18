@@ -27,7 +27,7 @@ header{
 
     .sidebar{
         background-color: rgb(63, 100, 63);
-        height: 100vh;
+        height: 120vh;
         width: 100%;
         max-width: 250px;
         position: fixed;
