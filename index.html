@@ -5,11 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wyatt Evans</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="main.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
         <h3>Wyatt Evans</h3>
-        <nav>
+        
+
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><p>Home</p></li>
+                    <li> <a href="aboutMe.html"><p>About Me</p></a> </li>
+                    <li> <a href="contact.html"><p>Contact</p></a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="ham-menu" >
+            <nav onclick="HamburgerMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </nav>
+        </div>
+
+        <nav class="display">
             <ul>
                 <li><p>Home</p></li>
                 <li> <a href="aboutMe.html"><p>About Me</p></a> </li>
@@ -19,6 +39,7 @@
     </header>
     
     <main>
+        
        <!-- Section when the user first visits the website -->
         <div class="fullscreen-section">
             <div class = "title">

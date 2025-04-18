@@ -5,17 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="main.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
         <h3>Wyatt Evans</h3>
-        <nav>
+
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><p>Home</p></a></li>
+                    <li> <a href="aboutMe.html"><p>About Me</p></a> </li>
+                    <li><p>Contact</p></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="ham-menu" >
+            <nav onclick="HamburgerMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </nav>
+        </div>
+
+        <nav class="display">
             <ul>
-                <li> <a href="index.html"><p>Home</p></a> </li>
+                <li><p>Home</p></li>
                 <li> <a href="aboutMe.html"><p>About Me</p></a> </li>
-                <li><p>Contact</p></li>
+                <li> <a href="contact.html"><p>Contact</p></a> </li>
             </ul>
         </nav>
+
     </header>
     <main>
         <!-- What the originally can see befor scrolling -->
@@ -39,50 +60,35 @@
         
         <div class="contactList">
             <ul>
-                <div class="left">
-                    <li>
-                        <!-- Spacing to even out this section with the other  -->
-                        <br>
-                        <br>
-                        <br>
-                        <!-- Section with a link to my linked-in page, and my GitHub Profile -->
-                        <h2>Connect with me on Linked-In</h2>
+                <li>
+                    <!-- Spacing to even out this section with the other  -->
+                    <br>
+                    <br>
+                    <br>
+                    <!-- Section with a link to my linked-in page, and my GitHub Profile -->
+                    <h2>Connect with me on Linked-In</h2>
+                    <button onclick="goToLinkedIn()"style= "background-color: rgb(255, 255, 255); border-radius: 5px; color: white;" class = "button"><img src = "photos/LinkedIn_logo_initials.png"style = "width: 30px;"></a></button>
+                    <br>
+                    <h2>Visit My Git-Hub</h2>
+                    <button onclick="goToGitHub()" style= "background-color: rgb(255, 255, 255); border-radius: 5px; color: white;" class = "button"><img src = "photos/GithubLogo.png"style = "width: 30px;"></a></button>
+                </li>
 
-                        <button onclick="goToLinkedIn()" style= "background-color: rgb(255, 255, 255); border-radius: 5px;" style= "color: white;" class = "button"><a href = "https://www.linkedin.com/in/wyatt-evans-66b8a62b7/" target = "_blank" class = "link"><img src = "photos/LinkedIn_logo_initials.png"style = "width: 30px;"></a></button>
-                        <script>
-                            function goToLinkedIn(){
-                                window.open("https://www.linkedin.com/in/wyatt-evans-66b8a62b7/", '_blank');
-                            }
-                        </script>
+                <!-- Where the user can input their email, type a message and send it to me -->
+                <li>
+                    <div class="center">
+                        <h2>Email Me:</h2>
+                    </div>
+                    <form action="https://formsubmit.co/wyattdlevans@gmail.com" method="post">
+                        <input type="hidden" name="_subject" value="New submission from My Personal Website!">
+                        <label for="email"><p class="Example" style="text-align: left;"> Email</p></label>
+                        <input class = "textBox" name = "email" id = "email" required type="email" placeholder="Your Email">
                         <br>
-                        <h2>Visit My Git-Hub</h2>
-                        <button onclick="goToLinkedIn()" style= "background-color: rgb(255, 255, 255); border-radius: 5px;" style= "color: white;" class = "button"><a href = "https://github.com/wevans02" target = "_blank" class = "link"><img src = "photos/GithubLogo.png"style = "width: 30px;"></a></button>
-                        <script>
-                            function goToLinkedIn(){
-                                window.open("https://github.com/wevans02", '_blank');
-                            }
-                        </script>
-                    </li>
-                </div>
-
-                <div class="right">
-                    <!-- Where the user can input their email, type a message and send it to me -->
-                    <li>
-                        <div class="center">
-                            <h2>Email Me:</h2>
-                        </div>
-                        <form action="https://formsubmit.co/wyattdlevans@gmail.com" method="post">
-                            <input type="hidden" name="_subject" value="New submission from My Personal Website!">
-                            <label for="email"><p class="Example" style="text-align: left;"> Email</p></label>
-                            <input class = "textBox" name = "email" id = "email" required type="email" placeholder="Your Email">
-                            <br>
-                            <label for="textarea" style = "text-align: left;">Message</label>
-                            <textarea class = "textBox" name = "Message" id="textarea" cols="30" rows="10" placeholder="Message" required></textarea>
-                            <br>
-                            <input class="submit" type="submit">
-                        </form>
-                    </li>
-                </div>
+                        <label for="textarea" style = "text-align: left;">Message</label>
+                        <textarea class = "textBox" name = "Message" style="width: 100%;" id="textarea" cols="30" rows="10" placeholder="Message" required></textarea>
+                        <br>
+                        <input class="submit" type="submit">
+                    </form>
+                </li>
             
                 
             </ul>
