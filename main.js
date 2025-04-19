@@ -15,4 +15,3 @@ function goToLinkedIn(){
 function goToGitHub(){
     window.open("https://github.com/wevans02", '_blank');
 }
-

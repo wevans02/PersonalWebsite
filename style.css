@@ -18,7 +18,7 @@ header{
 
 }
 
-
+/* For phone display (Hamburger menu) */
 @media only screen and (max-width: 450px){
     header .display ul {
         display: none;
@@ -27,12 +27,11 @@ header{
 
     .sidebar{
         background-color: rgb(63, 100, 63);
-        height: 100vh;
+        height: 120vh;
         width: 100%;
         max-width: 250px;
         position: fixed;
         top: 0;
-        bottom: 0;
         right: -450px;
         display: flex;
         flex-direction: column;
@@ -115,8 +114,6 @@ header{
    
 }
 
-
-
 @media only screen and (min-width: 450px) {
     .ham-menu{
         visibility: hidden;
@@ -126,6 +123,9 @@ header{
         display: none;
     }
 }
+/* End of phone display (Hamburger Menu) */
+
+
 
 
 ul{
@@ -358,4 +358,3 @@ input, textarea{
     cursor: pointer;
 
 }
-
