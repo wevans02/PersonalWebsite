@@ -191,6 +191,14 @@ main li{
     margin: 5px;
     justify-content: space-evenly;
 }
+.Picture_Paralegal{
+    min-width: 450px;
+    max-width: 625px;
+    padding: 7px;
+    background-color: rgb(63, 100, 63);
+    border-radius: 10px;
+    margin: auto;
+}
 
 .project-details{
     width: 100%;
@@ -198,7 +206,7 @@ main li{
     flex-wrap: wrap;
     max-width: 800px;
     line-height: 1.6;
-    justify-content: center;
+
        
 }
 
