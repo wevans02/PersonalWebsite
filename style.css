@@ -148,7 +148,8 @@ a{
 .fullscreen-section {
     width: 100%;
     scroll-snap-align: start;
-    padding: 10vh 0;
+    padding-top: 20vh;
+    padding-bottom: 30vh;
 }
 .fullscreen-section2 {
     width: 100%;
@@ -214,7 +215,7 @@ main li{
     width: 100%;
     height: auto;
     max-width: 229px;
-    
+    margin: auto;
 
 }
 .Picture li{
